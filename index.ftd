@@ -1,40 +1,144 @@
--- ds.page: Welcome to doc-site
+-- import: fastn-community.github.io/opensans-typography as opensans
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+align-content: center
+types: $opensans.types
+background.image: $bg-image
+
+-- ftd.column:
+width.fixed.px: 832
+height.fixed.px: 740
+align-content: center
 
 
-⚡️ `doc-site` will help you create a beautiful documentation site in no time.
+-- player: Shobhit
+dp: https://avatars.githubusercontent.com/u/35799284?v=4
 
-It provides out-of-the-box documentation features that can be used to create any
-kind of site(personal website, blog, etc).
+I am Frontend Developer.
 
-[Click here](https://fastn-community.github.io/doc-site/) to read doc-site
-documentation.
+-- ftd.column:
+spacing.fixed.px: 10
+margin-top.px: 60
+width: fill-container
+align-content: center
 
--- ds.h3: 🚀 Fast Track 
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 10
+align-content: center
 
-Create your first fastn [web-site](https://fastn.com/expander/hello-world/-/build/) 
-project in just 5 minutes!
+-- button: LinkedIn
+link: https://in.linkedin.com/in/shobhit-sundriyal
 
--- ds.h3: 🌟 Whats next?
+-- button: Instagram
 
-Create your first page. 
-[Click here to know more](https://fastn-community.github.io/doc-site/page/).
+-- end: ftd.row
 
--- ds.h3: 👀 Want to learn more?
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 10
+align-content: center
 
-Feel free to check [our expander course](https://fastn.com/expander/) or jump
-into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- button: Facebook
+
+-- button: Twitter
+link: https://twitter.com/ShobhitSundriy1
+
+-- end: ftd.row
 
 
--- ds.h3: 🎯 Used by?
 
-Our all documentation sites uses this `doc-site` theme.
 
-- [fastn.com](https://fastn.com/home/)
-- [FifthTry.com](https://www.fifthtry.com/)
+-- end: ftd.column
 
--- ds.h2: Learn fastn and become a pro?
+-- end: ftd.column
 
-You are one click away, just check [our documentation](https://fastn.com/) and 
-dont forget to jump into our [FifthTry Discord server](https://discord.gg/bucrdvptYd).
+-- end: ftd.column
 
--- end: ds.page
+
+
+
+
+
+
+-- component player:
+caption title:
+optional ftd.image-src dp:
+optional body body:
+ftd.color border-color: lime
+
+-- ftd.column:
+width.fixed.px: 341 
+height.fixed.px: 241
+padding-bottom.px: 10
+align-content: center
+
+-- ftd.image: $player.dp
+width.fixed.px: 118 
+height.fixed.px: 118
+border-radius.px: 60
+margin-bottom.px: 20
+border-color: $player.border-color
+border-width.px: 5
+
+-- ftd.text: $player.title
+role: $inherited.types.heading-large
+color: white
+
+-- ftd.text: $player.body
+role: $inherited.types.copy-regular
+color: white
+
+-- end: ftd.column
+
+-- end: player
+
+
+
+
+
+
+
+-- component button:
+caption title:
+optional string link:
+ftd.color text-color: black
+ftd.color border-color: white
+ftd.color hover: grey
+
+-- ftd.row:
+align-content: center
+width.fixed.percent: 30
+border-radius.px: 40
+height.fixed.px: 82
+border-width.px: 2
+background.solid: white
+border-color: $button.border-color
+
+
+-- ftd.text: $button.title
+link: $button.link
+padding.px: 10
+style: bold
+text-align: center
+color: $button.text-color
+role: $inherited.types.copy-regular
+
+
+
+-- end: ftd.row
+
+-- end: button
+
+
+
+\;; record variable : https://fastn.com/common-attributes/#background-image-ftd-background-image
+
+
+-- ftd.background-image bg-image:
+src:https://images.pexels.com/photos/281260/pexels-photo-281260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
+repeat: no-repeat
+position: center
+size: cover
