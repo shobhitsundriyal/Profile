@@ -1,5 +1,6 @@
 -- import: fastn-community.github.io/opensans-typography as opensans
 
+
 -- ftd.column:
 width: fill-container
 height: fill-container
